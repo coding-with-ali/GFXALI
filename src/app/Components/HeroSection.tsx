@@ -25,7 +25,7 @@ const inter = Inter({ subsets: ["latin"], weight: ["900"] });
 const scriptFont = Dancing_Script({ subsets: ["latin"], weight: ["700"] });
 
 export default function HeroLanding() {
-  const [cursor, setCursor] = useState({ x: 0, y: 0 });
+  const [, setCursor] = useState({ x: 0, y: 0 });
   const [zoom] = useState(100); // Zoom is static in this version
   const [fillColor, setFillColor] = useState("#c0c0c0");
   const [strokeColor, setStrokeColor] = useState("#ffff");
