@@ -189,17 +189,15 @@ export default function HeroLanding() {
       <section className="lg:hidden w-screen h-fit bg-black overflow-hidden relative flex flex-col font-sans">
         {/* Top Menu Bar - Mobile */}
         <div className="flex justify-center items-center h-16 bg-black border-b border-white text-white px-4 text-sm md:text-xl md:gap-5 font-semibold select-none shadow-sm">
-          {["Home", "Table Of Content", "About", "Project", "Contact"].map(
-            (item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="px-2 py-1 rounded cursor-pointer hover:text-[#c0c0c0] transition-colors"
-              >
-                {item}
-              </a>
-            ),
-          )}
+          {["Home", "About", "Project", "Contact"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="px-2 py-1 rounded cursor-pointer hover:text-[#c0c0c0] transition-colors"
+            >
+              {item}
+            </a>
+          ))}
         </div>
 
         {/* Main Workspace */}
@@ -346,10 +344,10 @@ export default function HeroLanding() {
   overflow-hidden
 
   w-full
-  max-w-[1100px]        /* default for 1280 */
-  md:max-w-[1300px]     /* for 1366 / 1440 */
-  lg:max-w-[1500px]     /* for 1600 / 1920 */
-  xl:max-w-[1700px]     /* ultra-wide */
+  max-w-275        /* default for 1280 */
+  md:max-w-325     /* for 1366 / 1440 */
+  lg:max-w-375     /* for 1600 / 1920 */
+  xl:max-w-425     /* ultra-wide */
   aspect-video
 "
             >

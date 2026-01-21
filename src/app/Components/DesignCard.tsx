@@ -32,11 +32,11 @@ const DesignCard: React.FC<DesignCardProps> = ({ title, icon }) => {
         </div>
       </div>
 
-      <div className="h-[2px] bg-black w-full"></div>
+      <div className="h-0.5 bg-black w-full"></div>
 
       {/* Bottom Section */}
       <div className="bg-white h-14 sm:h-16 md:h-24 rounded-b-[25px] md:rounded-b-[50px] flex items-center justify-center px-2 md:px-4 text-center border-x-2 border-b-2 border-black shadow-[0_4px_0_#000] md:shadow-[0_10px_0_#000]">
-        <h3 className="text-black font-black uppercase text-[9px] sm:text-[11px] md:text-lg leading-[1.1] break-words">
+        <h3 className="text-black font-black uppercase text-[9px] sm:text-[11px] md:text-lg leading-[1.1] wrap-break-word">
           {title}
         </h3>
       </div>

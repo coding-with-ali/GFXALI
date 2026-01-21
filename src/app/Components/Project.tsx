@@ -55,7 +55,7 @@ const getGridSpan = (category: string) => {
       return "md:col-span-3 h-[250px] md:h-[300px]"; 
     default:
       // Regular (Square-ish) - 2 columns wide out of 6
-      return "md:col-span-2 h-[300px] md:h-[350px]"; 
+      return "md:col-span-2 w-[300px] h-[300px] md:h-[350px] md:w-[350px]"; 
   }
 };
 
